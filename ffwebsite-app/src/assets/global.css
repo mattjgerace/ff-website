@@ -1,0 +1,48 @@
+body {
+    background-color: #013369;
+    color: whitesmoke;
+    font-family: 'Roboto';
+}
+
+.thead {
+    background-color: #d50a0a !important;
+    color: whitesmoke;
+    border-bottom: 2px solid #013369;
+}
+
+.thead2 {
+    background-color: #d50a0a !important;
+    color: whitesmoke;
+    border-bottom: 2px solid #013369;
+    border-top: 2px solid #013369;
+}
+
+.block {
+    margin: 10px;
+}
+
+.navbar-brand {
+    margin-left: 15px;
+    color: whitesmoke !important;
+    font-weight: bolder;
+}
+
+.nav-link {
+    margin-left: 5px;
+    color: whitesmoke !important;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.select {
+    margin-bottom: 15px;
+}
+
+.dir {
+    margin-bottom: 10px;
+}
