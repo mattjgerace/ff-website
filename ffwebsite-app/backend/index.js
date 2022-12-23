@@ -7,7 +7,7 @@ const port = process.env.PORT;
 const cors = require('cors');
 app.use(cors({
     origin: 
-    'https://lcds19fantasyfootball.azurewebsites.net' //'http://localhost:8080'
+    process.env.SITE //'http://localhost:8080'
 }));
 
 var bodyParser = require('body-parser');

@@ -4,7 +4,6 @@ node_modules
 /backend/db
 /routes
 /services
-config.js
 package-lock.json
 package.json
 populate.js
