@@ -27,7 +27,6 @@ const config = require('./config.js');
 const db = new sql.ConnectionPool(config);
 const dbConnection = db.connect();
 
-
 function accessATData(stats, perc, avg){
     return new Promise(resolve=>{
     //console.log("SELECT * FROM Leaderboard_AllTime WHERE rpc='"+stats+"' ORDER BY championships DESC");
