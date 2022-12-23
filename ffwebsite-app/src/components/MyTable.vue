@@ -113,7 +113,7 @@ import { defineComponent, ref } from 'vue'
 import MyBracket from './MyBracket.vue';
 import MyDraft from './MyDraft.vue';
 import axios from "axios";
-const target = "http://localhost:3030";
+const target = `${process.env.BACKEND}:${process.env.PORT}`;
 const headers = { 
   "Content-Type": "application/json",
   'Accept': 'application/json',
