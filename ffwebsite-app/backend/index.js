@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
+const port = parseInt(process.env.BACKEND_PORT);
 //const quotesRouter = require('./routes/seasons');
 
 const cors = require('cors');
