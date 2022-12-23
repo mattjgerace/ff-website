@@ -24,14 +24,14 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm run build --prefix ffwebsite-app
-          npm run test --prefix ffwebsite-app
+          npm run build --prefix ffwebsite-app/
+          npm run test --prefix ffwebsite-app/
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path:
+          path: ffwebsite-app/dist
 
   deploy:
     runs-on: ubuntu-latest
