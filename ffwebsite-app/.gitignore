@@ -11,7 +11,7 @@ populatetest.js
 sqltest.js
 
 # local env files
-.env
+/backend/.env
 .env.local
 .env.*.local
 
