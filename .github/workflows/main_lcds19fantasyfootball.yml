@@ -23,8 +23,8 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install
           cd ffwebsite-app/
+          npm install
           npm run build
           npm run test
 
