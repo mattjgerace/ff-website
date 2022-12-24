@@ -63,10 +63,11 @@ function accessSData(year, stats, perc, avg, sort){
     }
     var tableData = [];
     await dbConnection;
-    await db.request.query("SELECT * FROM Leaderboard_Season "+query, [], (err, rows)=>{
+    db.request().query("SELECT * FROM Leaderboard_Season "+query, (err, rows)=>{
         if(err) return console.log(err.message);
-        rows.forEach((row)=>{
-            //console.log(row);
+        console.log(rows.recordset[0].year)
+        rows.recordset.forEach((row)=>{
+            console.log(row);
             tableRow = {};
             tableRow["standing"] = (year=='All Time' ? row.year : row.standing);
             tableRow["team"] = row.team;
