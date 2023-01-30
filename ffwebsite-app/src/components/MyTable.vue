@@ -113,7 +113,6 @@ import { defineComponent, ref } from 'vue'
 import MyBracket from './MyBracket.vue';
 import MyDraft from './MyDraft.vue';
 import axios from "axios";
-require('dotenv').config();
 const target = `${process.env.BACKEND}:${process.env.BACKEND_PORT}` // http://localhost:3030/;
 const headers = { 
   "Content-Type": "application/json",
