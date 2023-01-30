@@ -64,8 +64,8 @@ function accessSData(year, stats, perc, avg, sort){
     var tableData = [];
     await dbConnection;
     db.request().query("SELECT * FROM Leaderboard_Season "+query, (err, rows)=>{
-        if(err) return console.log(err.message);
         console.log(rows.recordset[0].year)
+        if(err) return console.log(err.message);
         rows.recordset.forEach((row)=>{
             console.log(row);
             tableRow = {};
