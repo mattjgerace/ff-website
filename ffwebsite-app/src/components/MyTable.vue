@@ -113,7 +113,7 @@ import { defineComponent, ref } from 'vue'
 import MyBracket from './MyBracket.vue';
 import MyDraft from './MyDraft.vue';
 import axios from "axios";
-const target = `${process.env.BACKEND}:${process.env.BACKEND_PORT}` //http://localhost:3030/;
+const target = `${process.env.BACKEND}:${process.env.BACKEND_PORT}` // http://localhost:3030/;
 const headers = { 
   "Content-Type": "application/json",
   'Accept': 'application/json',
@@ -190,7 +190,7 @@ export default defineComponent({
     },
     methods: {
       changeTable: function() {
-      //
+      console.log(target)
       const payload = {
         year: ((this.year_selected == "Year:") ? 'All Time' : this.year_selected),
         stats: ((this.brac == 'show') ? 'Postseason' : this.stats_selected),
@@ -214,7 +214,7 @@ export default defineComponent({
       this.tableData = response.data;
       })
       .catch(function (error) {
-      console.log(error);
+        console.log(error);
       });
       },
       changeAvg: function() {
